@@ -34,7 +34,9 @@ function Header() {
     let location = useLocation()
 
     useEffect(() => {
-        toggleNav()
+        if(showNav){
+            toggleNav()
+        }
     },[location.pathname])
 
   return (
@@ -47,8 +49,8 @@ function Header() {
             <div className={`navLinks ${(showNav)?'showNavLinks':'hideNavLinks'}`}>
                 <ul>
                     {
-                        navItems.map(({name , link})=>(
-                            <li>
+                        navItems.map(({name , link} , index)=>(
+                            <li key={index}>
                                 <Link to={link}>{name}</Link>
                             </li>
                         ) )
@@ -56,7 +58,7 @@ function Header() {
                 </ul>
             </div>
             <div className={`menuBar ${(showNav)?'menuBarShow':'menuBarHide'}`} onClick={toggleNav}>
-            {(showNav) ?  <IoClose size={20} /> : <GiHamburgerMenu size={20} /> }
+            {(showNav) ?  <IoClose size={30} /> : <GiHamburgerMenu size={20} /> }
             </div>
         </div>
     </header>
