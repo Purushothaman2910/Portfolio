@@ -4,7 +4,9 @@ import '../assets/css/About.css'
 function About() {
   return (
     <div className='aboutDiv'>
-      About
+      <div className="aboutMainDiv">
+       <p>About me</p>
+      </div>
     </div>
   )
 }

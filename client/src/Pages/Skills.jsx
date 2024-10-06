@@ -1,8 +1,10 @@
 import React from 'react'
-
+import '../assets/css/Skills.css'
 function Skills() {
   return (
-    <div>Skills</div>
+    <div className='skillsDiv'>
+      
+    </div>
   )
 }
 
