@@ -1,0 +1,22 @@
+:root{
+  --primaryDarkBackGroundColor : #090908 ;
+  --secondDarkBackGroundColor : #7d8484;
+  --darTextColor : #d6dbdd ;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body{
+  background-color: var(--primaryDarkBackGroundColor);
+  color: var(--darTextColor);
+  background-image: url('/Logo.png') ;
+  background-position: center;      
+  background-size: contain;           
+  background-repeat: no-repeat;     
+  background-attachment: fixed;   
+}
