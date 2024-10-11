@@ -33,7 +33,7 @@
 @keyframes SlideFromRight {
     from{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(20px);
     }
     to{
         opacity: 1;

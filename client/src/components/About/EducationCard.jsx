@@ -34,8 +34,8 @@ function EducationCard({index = 1 , title , image , content}) {
                 content
             }
             </p>
-        <div className={`educationImageContainer`} ref={imageRef}>
-            <img className={`educationImage animate ${(imageVisible) ? ((index % 2)=== 0) ? "animateFromLeft" : "animateFromRight" :"" }`} src={image} alt="School logo" />
+        <div className={`educationImageContainer animate ${(imageVisible) ? "animateFromRight" :"" }`} ref={imageRef}>
+            <img className={`educationImage`} src={image} alt="School logo" />
         </div>
         </div>
         </div>

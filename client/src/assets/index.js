@@ -2,10 +2,18 @@ import JsImage from './img/javascript.jpg'
 import Logo from './img/Logo.png'
 import SchoolLogo from './img/saru.jpg'
 import Collegelogo from './img/CollegeLogo.jpg'
+import ReactLogo from './img/ReactLogo.png'
+import NodejsLogo from './img/Nodejs.png'
+import TailwindLogo from './img/Tailwindcss.png'
+import MongoDbLogo from './img/MongoDb.png'
 
 export {
     JsImage ,
     Logo ,
     SchoolLogo ,
-    Collegelogo
+    Collegelogo ,
+    ReactLogo ,
+    NodejsLogo ,
+    TailwindLogo ,
+    MongoDbLogo
 }
