@@ -6,6 +6,20 @@
 }
 
 
+.animate{
+    opacity: 0;
+}   
+
+.animateFromLeft{
+    opacity: 1;
+    animation: SlideFromLeft 1s ease-in-out;
+}
+.animateFromRight{
+    opacity: 1;
+    animation: SlideFromRight 1s ease-in-out;
+}
+
+
 @keyframes SlideFromLeft{
     from{
         opacity: 0;
@@ -57,23 +71,42 @@
     }
     .aboutMeHeroContent p span{
         font-weight: bold;
+    } 
+    .educationContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }  
+    .educationImageContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .animate{
-        opacity: 0;
+    .educationImage{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
     }
-    .animateFromLeft{
-        opacity: 1;
-        animation: SlideFromLeft 1s ease-in-out;
+    .educationHeading p{
+        font-size: 30px;
+        font-weight: bold;
     }
-    .animateFromRight{
-        opacity: 1;
-        animation: SlideFromRight 1s ease-in-out;
+    .educationContent{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;        
     }
-}
+    .educationContent p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    }
 
 @media only screen and (min-width:768px){
-    .aboutMainDiv{
-        position: relative;
-        top: 20%;  
-      }
+    .aboutHeroMeHeading{
+        margin-top: 8%;
+    }
+    .educationContent{
+        flex-direction: row;
+    }
 }
