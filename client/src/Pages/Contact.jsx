@@ -1,6 +1,6 @@
 import React from 'react'
 import { MyImage } from '../assets'
-import { FaLinkedinIn ,FaGithub } from "react-icons/fa";
+import { FaLinkedinIn ,FaGithub , FaPhone } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 import { IoMdMail } from "react-icons/io";
 import '../assets/css/Contact.css'
@@ -15,7 +15,7 @@ function SocialMediaIcon ({name , link , logo , download , target}){
 }
 
 function Contact() {
-  let Name = 'Purushothaman .V'
+  let Name = 'Purushothaman'
   let Designation = 'Full stack developer'
   let socialMedia = [
     {
@@ -36,6 +36,13 @@ function Contact() {
       logo : <IoMdMail size={25} />,
       link : '#' ,
       name : 'velusamypurushothaman@gmail.com',
+      download : false ,
+      target : ''
+    },
+    {
+      logo : <FaPhone size={25} />,
+      link : '#' ,
+      name : '9345698619',
       download : false ,
       target : ''
     },
