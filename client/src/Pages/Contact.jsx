@@ -42,7 +42,7 @@ function Contact() {
     {
       logo : <ImProfile size={25} />,
       link : './Purushothaman_Resume.pdf' ,
-      name : 'Click to download my resume',
+      name : 'Resume',
       download : false ,
       target : 'blank'
     },
