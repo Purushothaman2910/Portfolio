@@ -2,7 +2,7 @@ function InViewPortObserver(setinview){
     let Observer = new IntersectionObserver((entries)=>{
         let entry = entries[0]
         setinview(entry.isIntersecting)
-    } , {threshold : 0.1 })
+    } , {threshold : 0.5 })
     return Observer
 }
 

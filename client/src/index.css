@@ -32,11 +32,37 @@ body{
   }
 }
 
-.animate{
-  opacity: 0;
+
+@keyframes SlideFromLeft{
+  from{
+      opacity: 0;
+      transform: translateX(-100px);
+  }to{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes SlideFromRight {
+  from{
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
 .animateFromBottom{
   opacity: 1;
   animation: slideFromBottom 1s ease-in-out;
+}
+.animateFromLeft{
+  opacity: 1;
+  animation: SlideFromLeft 1s ease-in-out;
+}
+.animateFromRight{
+  opacity: 1;
+  animation: SlideFromRight 1s ease-in-out;
 }
