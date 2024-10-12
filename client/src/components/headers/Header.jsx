@@ -19,11 +19,7 @@ function Header() {
         {
             name: 'Skills',
             link: '/skills',
-        } ,
-        {
-            name: 'Experience',
-            link: '/expirence',
-        } ,
+        } ,        
         {
             name: 'Contact',
             link: '/contact',

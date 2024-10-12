@@ -6,6 +6,7 @@ import ReactLogo from './img/ReactLogo.png'
 import NodejsLogo from './img/Nodejs.png'
 import TailwindLogo from './img/Tailwindcss.png'
 import MongoDbLogo from './img/MongoDb.png'
+import MyImage from './img/MyImage.jpg'
 
 export {
     JsImage ,
@@ -15,5 +16,6 @@ export {
     ReactLogo ,
     NodejsLogo ,
     TailwindLogo ,
-    MongoDbLogo
+    MongoDbLogo ,
+    MyImage
 }
