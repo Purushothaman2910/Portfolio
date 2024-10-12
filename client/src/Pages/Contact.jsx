@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { MyImage } from '../assets'
-import { FaLinkedinIn ,FaGithub , FaPhone } from "react-icons/fa";
+import { FaLinkedinIn ,FaGithub , FaPhone } from "react-icons/fa"
 import { ImProfile } from "react-icons/im";
 import { IoMdMail } from "react-icons/io";
+import {InviewPortListener} from '../utils'
 import '../assets/css/Contact.css'
 
 function SocialMediaIcon ({name , link , logo , download , target}){
@@ -17,6 +18,13 @@ function SocialMediaIcon ({name , link , logo , download , target}){
 function Contact() {
   let Name = 'Purushothaman'
   let Designation = 'Full stack developer'
+  let ref = useRef(null)
+  let [visible , setVisible] = useState(false)
+  let viewPortListener = new InviewPortListener(setVisible , ref)
+  useEffect(()=>{
+    viewPortListener.Observe()
+    return viewPortListener.unObserve()
+  } ,[])
   let socialMedia = [
     {
       logo : <FaGithub size={25} />,
@@ -56,7 +64,7 @@ function Contact() {
   ]
   return (
     <div className='contactMainDiv'>      
-        <div className="card-client">
+        <div className={`card-client animate ${(visible)?"animateFromBottom":""}`} ref={ref}>
             <div className="user-picture">
                 <img src={MyImage} alt="" />
             </div>

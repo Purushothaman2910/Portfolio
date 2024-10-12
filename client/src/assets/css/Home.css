@@ -1,13 +1,3 @@
-@keyframes slideFromBottom {
-    from{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 .homeDiv{
     display: flex;
     height: 100vh;
@@ -28,12 +18,4 @@
 
 .homeDiv p span {
     text-decoration: line-through;
-}
-
-.animate{
-    opacity: 0;
-}
-
-.animateFromBottom{
-    animation: slideFromBottom 1s ease-in-out;
 }
