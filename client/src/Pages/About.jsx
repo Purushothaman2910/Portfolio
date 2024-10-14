@@ -35,7 +35,7 @@ function About() {
         <AboutContentParagraph1 />
         <AboutContentParagraph2 />   
         {
-          Education.map(({image , content , title } , i)=> <EducationCard index={i} image={image} content={content} title={title} />  )
+          Education.map(({image , content , title } , i)=> <EducationCard key={i} index={i} image={image} content={content} title={title} />  )
         }          
        </div>      
       </div>      
